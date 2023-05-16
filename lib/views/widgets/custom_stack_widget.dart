@@ -1,4 +1,5 @@
 import 'package:demo/utils.dart';
+import 'package:demo/views/log_in/log_in.dart';
 import 'package:flutter/material.dart';
 
 class CommonStackWidget extends StatelessWidget {
@@ -148,29 +149,39 @@ class CommonStackWidget extends StatelessWidget {
                     // group178m7c (9:328)
                     left: 37 * fem,
                     top: 15 * fem,
-                    child: SizedBox(
-                      width: 120 * fem,
-                      height: 24 * fem,
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Container(
-                            // getstartedh1G (9:329)
-                            margin: EdgeInsets.fromLTRB(
-                                0 * fem, 0 * fem, 3 * fem, 0 * fem),
-                            child: Text(
-                              'Get Started',
-                              style: safeGoogleFont(
-                                'Poppins',
-                                fontSize: 16 * ffem,
-                                fontWeight: FontWeight.w600,
-                                height: 1.5 * ffem / fem,
-                                color: const Color(0xffffffff),
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const LogInScreen(),
+                          ),
+                        );
+                      },
+                      child: SizedBox(
+                        width: 120 * fem,
+                        height: 24 * fem,
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              // getstartedh1G (9:329)
+                              margin: EdgeInsets.fromLTRB(
+                                  0 * fem, 0 * fem, 3 * fem, 0 * fem),
+                              child: Text(
+                                'Get Started',
+                                style: safeGoogleFont(
+                                  'Poppins',
+                                  fontSize: 16 * ffem,
+                                  fontWeight: FontWeight.w600,
+                                  height: 1.5 * ffem / fem,
+                                  color: const Color(0xffffffff),
+                                ),
                               ),
                             ),
-                          ),
-                          const Icon(Icons.arrow_forward_outlined),
-                        ],
+                            const Icon(Icons.arrow_forward_outlined),
+                          ],
+                        ),
                       ),
                     ),
                   ),

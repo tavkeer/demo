@@ -13,7 +13,10 @@ class MessageScreen extends StatelessWidget {
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        leading: const Icon(Icons.arrow_back),
+        leading: IconButton(
+          onPressed: () => Navigator.of(context).pop(),
+          icon: const Icon(Icons.arrow_back),
+        ),
         actions: [
           Container(
             // carbonoverflowmenuhorizontal1Q (9:2569)

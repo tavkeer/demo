@@ -1,5 +1,7 @@
 import 'package:demo/common_widgets/social_row.dart';
 import 'package:demo/utils.dart';
+import 'package:demo/views/message_page/message_page.dart';
+import 'package:demo/views/sign_up/sign_up.dart';
 import 'package:flutter/material.dart';
 
 import 'login_policy_text.dart';
@@ -60,22 +62,32 @@ class Body extends StatelessWidget {
                         height: 24 * fem,
                         child: const Icon(Icons.arrow_back)),
                   ),
-                  Container(
-                    margin: EdgeInsets.fromLTRB(
-                      0 * fem,
-                      5 * fem,
-                      0 * fem,
-                      0 * fem,
-                    ),
-                    child: Text(
-                      "Don't have account?",
-                      textAlign: TextAlign.center,
-                      style: safeGoogleFont(
-                        'Poppins',
-                        fontSize: 12 * ffem,
-                        fontWeight: FontWeight.w700,
-                        height: 1.2 * ffem / fem,
-                        color: const Color(0xffffffff),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SignUpScreen(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      margin: EdgeInsets.fromLTRB(
+                        0 * fem,
+                        5 * fem,
+                        0 * fem,
+                        0 * fem,
+                      ),
+                      child: Text(
+                        "Don't have account?",
+                        textAlign: TextAlign.center,
+                        style: safeGoogleFont(
+                          'Poppins',
+                          fontSize: 12 * ffem,
+                          fontWeight: FontWeight.w700,
+                          height: 1.2 * ffem / fem,
+                          color: const Color(0xffffffff),
+                        ),
                       ),
                     ),
                   ),
@@ -220,15 +232,23 @@ class Body extends StatelessWidget {
                           color: const Color(0xff1f7a8c),
                         ),
                         child: Center(
-                          child: Text(
-                            'Login',
-                            textAlign: TextAlign.center,
-                            style: safeGoogleFont(
-                              'Poppins',
-                              fontSize: 16 * ffem,
-                              fontWeight: FontWeight.w600,
-                              height: 1.5 * ffem / fem,
-                              color: const Color(0xffffffff),
+                          child: InkWell(
+                            onTap: () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const MessageScreen(),
+                              ),
+                            ),
+                            child: Text(
+                              'Login',
+                              textAlign: TextAlign.center,
+                              style: safeGoogleFont(
+                                'Poppins',
+                                fontSize: 16 * ffem,
+                                fontWeight: FontWeight.w600,
+                                height: 1.5 * ffem / fem,
+                                color: const Color(0xffffffff),
+                              ),
                             ),
                           ),
                         ),

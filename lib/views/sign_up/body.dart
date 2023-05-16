@@ -1,5 +1,6 @@
 import 'package:demo/utils.dart';
 import 'package:demo/views/log_in/log_in.dart';
+import 'package:demo/views/message_page/message_page.dart';
 import 'package:demo/views/sign_up/row_whatsapp.dart';
 import 'package:demo/views/sign_up/sign_up_policy_text.dart';
 import 'package:flutter/material.dart';
@@ -62,7 +63,7 @@ class Body extends StatelessWidget {
                         child: const Icon(Icons.arrow_back)),
                     GestureDetector(
                       onTap: () {
-                        Navigator.push(
+                        Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
                             builder: (context) => const LogInScreen(),
@@ -187,7 +188,12 @@ class Body extends StatelessWidget {
                     ffem: ffem,
                   ),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MessageScreen(),
+                      ),
+                    ),
                     child: SignUpButton(fem: fem, ffem: ffem),
                   ),
                   Container(
