@@ -185,7 +185,7 @@ class Body extends StatelessWidget {
                     onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const MessageScreen(),
+                        builder: (context) => const SlidingPages(),
                       ),
                     ),
                     child: SignUpButton(fem: fem, ffem: ffem),

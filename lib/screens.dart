@@ -18,3 +18,5 @@ export 'package:demo/common_widgets/social_row.dart';
 export 'package:demo/views/sign_up/sign_up.dart';
 export 'package:demo/views/set_goals/components/check_boxlist.dart';
 export 'package:percent_indicator/circular_percent_indicator.dart';
+export 'package:demo/views/action_screen/action_screen.dart';
+export 'package:demo/views/sliding_pages_navigator/sliding_pages.dart';
