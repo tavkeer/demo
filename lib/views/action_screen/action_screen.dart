@@ -1,5 +1,4 @@
-import 'package:demo/common_widgets/bottom_nav_bar.dart';
-import 'package:flutter/material.dart';
+import 'package:demo/screens.dart';
 
 class ActionScreen extends StatelessWidget {
   const ActionScreen({super.key});

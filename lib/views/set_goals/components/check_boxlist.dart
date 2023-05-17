@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:demo/utils.dart';
+import 'package:demo/screens.dart';
 
 class CheckBoxList extends StatefulWidget {
   const CheckBoxList({

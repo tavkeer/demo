@@ -1,8 +1,4 @@
-import 'package:demo/common_widgets/bottom_nav_bar.dart';
-import 'package:demo/utils.dart';
-import 'package:demo/views/set_goals/components/check_boxlist.dart';
-import 'package:flutter/material.dart';
-import 'package:percent_indicator/circular_percent_indicator.dart';
+import 'package:demo/screens.dart';
 
 class SetGoalsPage extends StatefulWidget {
   const SetGoalsPage({super.key});

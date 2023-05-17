@@ -1,7 +1,4 @@
-import 'package:demo/views/intro_one/intro_one.dart';
-import 'package:demo/views/intro_three/intro_three.dart';
-import 'package:demo/views/intro_two/intro_two.dart';
-import 'package:flutter/material.dart';
+import 'package:demo/screens.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({super.key});

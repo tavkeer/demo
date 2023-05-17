@@ -1,6 +1,4 @@
-import 'package:demo/utils.dart';
-import 'package:demo/views/log_in/log_in.dart';
-import 'package:flutter/material.dart';
+import 'package:demo/screens.dart';
 
 class CommonStackWidget extends StatelessWidget {
   const CommonStackWidget({

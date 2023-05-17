@@ -1,6 +1,4 @@
-import 'package:demo/views/intro_three/components/index_widget.dart';
-import 'package:demo/common_widgets/custom_stack_widget.dart';
-import 'package:flutter/material.dart';
+import 'package:demo/screens.dart';
 
 class IntroThree extends StatelessWidget {
   const IntroThree({super.key});

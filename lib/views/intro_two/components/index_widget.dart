@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:demo/screens.dart';
 
 class IndexWidgetTwo extends StatelessWidget {
   const IndexWidgetTwo({

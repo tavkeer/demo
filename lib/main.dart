@@ -1,5 +1,4 @@
-import 'package:demo/views/landing_screen/landing_screen.dart';
-import 'package:flutter/material.dart';
+import 'screens.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
-      home: const LandingScreen(),
+      home: const MessageScreen(),
     );
   }
 }

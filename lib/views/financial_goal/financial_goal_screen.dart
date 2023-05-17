@@ -1,6 +1,4 @@
-import 'package:demo/common_widgets/bottom_nav_bar.dart';
-import 'package:demo/utils.dart';
-import 'package:flutter/material.dart';
+import 'package:demo/screens.dart';
 
 class FinancialGoalScreen extends StatelessWidget {
   const FinancialGoalScreen({super.key});

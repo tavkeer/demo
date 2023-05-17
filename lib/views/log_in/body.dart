@@ -1,10 +1,5 @@
-import 'package:demo/common_widgets/social_row.dart';
-import 'package:demo/utils.dart';
-import 'package:demo/views/message_page/message_page.dart';
-import 'package:demo/views/sign_up/sign_up.dart';
-import 'package:flutter/material.dart';
-
 import 'login_policy_text.dart';
+import 'package:demo/screens.dart';
 
 class Body extends StatelessWidget {
   const Body({
