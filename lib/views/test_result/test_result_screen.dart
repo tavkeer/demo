@@ -75,18 +75,24 @@ class TestResultScreen extends StatelessWidget {
                                     height: 3 * fem,
                                   ),
                                 ),
-                                Container(
-                                  // ellipse6o9h (9:2640)
-                                  width: 24 * fem,
-                                  height: 24 * fem,
-                                  decoration: BoxDecoration(
-                                    borderRadius:
-                                        BorderRadius.circular(12 * fem),
-                                    color: const Color(0xffd9d9d9),
-                                    image: DecorationImage(
-                                      fit: BoxFit.cover,
-                                      image: AssetImage(
-                                        "$androidPath/ellipse-5-bg.png",
+                                GestureDetector(
+                                  onTap: () => Navigator.of(context)
+                                      .push(MaterialPageRoute(
+                                    builder: (context) => const ProfileScreen(),
+                                  )),
+                                  child: Container(
+                                    // ellipse6o9h (9:2640)
+                                    width: 24 * fem,
+                                    height: 24 * fem,
+                                    decoration: BoxDecoration(
+                                      borderRadius:
+                                          BorderRadius.circular(12 * fem),
+                                      color: const Color(0xffd9d9d9),
+                                      image: DecorationImage(
+                                        fit: BoxFit.cover,
+                                        image: AssetImage(
+                                          "$androidPath/ellipse-5-bg.png",
+                                        ),
                                       ),
                                     ),
                                   ),

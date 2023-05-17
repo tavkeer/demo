@@ -1,5 +1,4 @@
 import 'package:demo/screens.dart';
-import 'package:demo/views/action_screen/action_screen.dart';
 import 'package:demo/views/camera/camera_screen.dart';
 import 'package:demo/views/financial_goal/financial_goal_screen.dart';
 import 'package:demo/views/home/home_screen.dart';

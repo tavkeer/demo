@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:demo/screens.dart';
 
 class ActionScreen extends StatelessWidget {
@@ -29,17 +28,22 @@ class ActionScreen extends StatelessWidget {
               height: 3 * fem,
             ),
           ),
-          Container(
-            // ellipse6fdQ (9:2573)
-            width: 24 * fem,
-            height: 24 * fem,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12 * fem),
-              color: const Color(0xffd9d9d9),
-              image: const DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage(
-                  "assets/android-design/images/profile.png",
+          GestureDetector(
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => const ProfileScreen(),
+            )),
+            child: Container(
+              // ellipse6fdQ (9:2573)
+              width: 24 * fem,
+              height: 24 * fem,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(12 * fem),
+                color: const Color(0xffd9d9d9),
+                image: const DecorationImage(
+                  fit: BoxFit.cover,
+                  image: AssetImage(
+                    "assets/android-design/images/profile.png",
+                  ),
                 ),
               ),
             ),

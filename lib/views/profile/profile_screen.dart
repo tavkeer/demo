@@ -507,13 +507,16 @@ class ProfileScreen extends StatelessWidget {
               left: 26 * fem,
               top: 50 * fem,
               child: Align(
-                child: SizedBox(
-                  width: 24 * fem,
-                  height: 24 * fem,
-                  child: Image.asset(
-                    "$androidPath/group-208.png",
+                child: GestureDetector(
+                  onTap: () => Navigator.of(context).pop(),
+                  child: SizedBox(
                     width: 24 * fem,
                     height: 24 * fem,
+                    child: Image.asset(
+                      "$androidPath/group-208.png",
+                      width: 24 * fem,
+                      height: 24 * fem,
+                    ),
                   ),
                 ),
               ),
