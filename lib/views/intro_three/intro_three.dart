@@ -1,5 +1,5 @@
 import 'package:demo/views/intro_three/components/index_widget.dart';
-import 'package:demo/views/widgets/custom_stack_widget.dart';
+import 'package:demo/common_widgets/custom_stack_widget.dart';
 import 'package:flutter/material.dart';
 
 class IntroThree extends StatelessWidget {
@@ -45,6 +45,7 @@ class IntroThree extends StatelessWidget {
                 tintPath: "assets/android-design/images/intro_onetint.png",
                 backPath: "assets/android-design/images/intro_three.png",
                 widget: IndexWidgetThree(fem: fem, ffem: ffem),
+                text: "Get Started",
               ),
             ],
           ),

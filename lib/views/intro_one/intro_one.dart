@@ -1,5 +1,5 @@
 import 'package:demo/views/intro_one/components/index_widget.dart';
-import 'package:demo/views/widgets/custom_stack_widget.dart';
+import 'package:demo/common_widgets/custom_stack_widget.dart';
 import 'package:flutter/material.dart';
 
 class IntroOne extends StatelessWidget {
@@ -45,6 +45,7 @@ class IntroOne extends StatelessWidget {
                 tintPath: "assets/android-design/images/intro_onetint.png",
                 backPath: "assets/android-design/images/intro_oneback.png",
                 widget: IndexWidgetOne(fem: fem, ffem: ffem),
+                text: "Next",
               ),
             ],
           ),

@@ -1,30 +1,35 @@
 import 'package:demo/utils.dart';
 import 'package:flutter/material.dart';
 
-class BottonNavContainer extends StatelessWidget {
+class BottomNavBar extends StatelessWidget {
+  const BottomNavBar({
+    super.key,
+    required this.fem,
+    required this.androidPath,
+    required this.ffem,
+  });
+
   final double fem;
+  final String androidPath;
   final double ffem;
-  const BottonNavContainer({super.key, required this.fem, required this.ffem});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      // group530ZNe (52:1325)
       width: double.infinity,
-      height: 115 * fem,
+      height: 105 * fem,
       child: Stack(
         children: [
           Positioned(
-            // subtracthUr (52:1326)
+            // subtractswd (52:1305)
             left: 0 * fem,
             top: 29 * fem,
-            bottom: 0,
             child: Align(
               child: SizedBox(
                 width: 360 * fem,
                 height: 80 * fem,
                 child: Image.asset(
-                  "assets/android-design/images/botton_nav.png",
+                  "$androidPath/subtract.png",
                   width: 360 * fem,
                   height: 80 * fem,
                 ),
@@ -32,7 +37,7 @@ class BottonNavContainer extends StatelessWidget {
             ),
           ),
           Positioned(
-            // ellipse71VY (52:1329)
+            // ellipse7o4b (52:1308)
             left: 151.4921875 * fem,
             top: 0 * fem,
             child: Align(
@@ -56,7 +61,7 @@ class BottonNavContainer extends StatelessWidget {
             ),
           ),
           Positioned(
-            // solarheartpulseboldV9p (52:1330)
+            // solarheartpulseboldg8P (52:1309)
             left: 166.0256347656 * fem,
             top: 14.2543945312 * fem,
             child: Align(
@@ -64,7 +69,7 @@ class BottonNavContainer extends StatelessWidget {
                 width: 27.95 * fem,
                 height: 25.15 * fem,
                 child: Image.asset(
-                  "assets/android-design/images/heartline.png",
+                  "$androidPath/solar-heart-pulse-bold.png",
                   width: 27.95 * fem,
                   height: 25.15 * fem,
                 ),
@@ -72,7 +77,7 @@ class BottonNavContainer extends StatelessWidget {
             ),
           ),
           Positioned(
-            // iconparksolidpassportmt2 (52:1332)
+            // iconparksolidpassportydH (52:1311)
             left: 86.3718261719 * fem,
             top: 49.7487792969 * fem,
             child: Align(
@@ -80,7 +85,7 @@ class BottonNavContainer extends StatelessWidget {
                 width: 19.56 * fem,
                 height: 27.95 * fem,
                 child: Image.asset(
-                  "assets/android-design/images/activity.png",
+                  "$androidPath/icon-park-solid-passport.png",
                   width: 19.56 * fem,
                   height: 27.95 * fem,
                 ),
@@ -88,7 +93,7 @@ class BottonNavContainer extends StatelessWidget {
             ),
           ),
           Positioned(
-            // epmenu8MC (52:1341)
+            // epmenugnb (52:1320)
             left: 252.9460449219 * fem,
             top: 51.1462402344 * fem,
             child: Align(
@@ -96,7 +101,7 @@ class BottonNavContainer extends StatelessWidget {
                 width: 25.15 * fem,
                 height: 25.15 * fem,
                 child: Image.asset(
-                  "assets/android-design/images/menu.png",
+                  "$androidPath/ep-menu.png",
                   width: 25.15 * fem,
                   height: 25.15 * fem,
                 ),
@@ -104,7 +109,7 @@ class BottonNavContainer extends StatelessWidget {
             ),
           ),
           Positioned(
-            // activityqFc (52:1343)
+            // activityyWo (52:1322)
             left: 77.7077636719 * fem,
             top: 88.876953125 * fem,
             child: Align(
@@ -126,7 +131,7 @@ class BottonNavContainer extends StatelessWidget {
             ),
           ),
           Positioned(
-            // menuYA2 (52:1344)
+            // menuRtb (52:1323)
             left: 252.1076660156 * fem,
             top: 88.876953125 * fem,
             child: Align(
@@ -148,7 +153,7 @@ class BottonNavContainer extends StatelessWidget {
             ),
           ),
           Positioned(
-            // homeeTx (52:1345)
+            // homeKyy (52:1324)
             left: 169.9384765625 * fem,
             top: 41.0845947266 * fem,
             child: Align(

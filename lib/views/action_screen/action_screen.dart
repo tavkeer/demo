@@ -1,16 +1,15 @@
 import 'package:demo/common_widgets/bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
-class MessageScreen extends StatelessWidget {
-  const MessageScreen({super.key});
+class ActionScreen extends StatelessWidget {
+  const ActionScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
-    double ffem = fem * 0.99;
-    final double height = MediaQuery.of(context).size.height;
-    final double width = MediaQuery.of(context).size.width;
+    double ffem = fem * 0.97;
+    String androidPath = "assets/android-design/images";
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -44,20 +43,11 @@ class MessageScreen extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(width: 10),
         ],
       ),
-      body: SizedBox(
-        width: width,
-        height: height,
-        child: Column(
-          children: const [],
-        ),
-      ),
-      bottomNavigationBar: BottomNavBar(
-        fem: fem,
-        androidPath: "assets/android-design/images",
-        ffem: ffem,
-      ),
+      bottomNavigationBar:
+          BottomNavBar(fem: fem, androidPath: androidPath, ffem: ffem),
     );
   }
 }

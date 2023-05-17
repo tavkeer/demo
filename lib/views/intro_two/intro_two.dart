@@ -1,5 +1,5 @@
 import 'package:demo/views/intro_two/components/index_widget.dart';
-import 'package:demo/views/widgets/custom_stack_widget.dart';
+import 'package:demo/common_widgets/custom_stack_widget.dart';
 import 'package:flutter/material.dart';
 
 class IntroTwo extends StatelessWidget {
@@ -46,6 +46,7 @@ class IntroTwo extends StatelessWidget {
                 backPath:
                     "assets/android-design/images/mental-health-cuate-1.png",
                 widget: IndexWidgetTwo(fem: fem, ffem: ffem),
+                text: "Next",
               ),
             ],
           ),

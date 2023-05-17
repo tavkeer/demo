@@ -10,13 +10,14 @@ class CommonStackWidget extends StatelessWidget {
     required this.tintPath,
     required this.backPath,
     required this.widget,
+    required this.text,
   }) : super(key: key);
 
   final double fem;
   final double ffem;
   final String tintPath;
   final String backPath;
-
+  final String text;
   final Widget widget;
 
   @override
@@ -169,7 +170,7 @@ class CommonStackWidget extends StatelessWidget {
                               margin: EdgeInsets.fromLTRB(
                                   0 * fem, 0 * fem, 3 * fem, 0 * fem),
                               child: Text(
-                                'Get Started',
+                                text,
                                 style: safeGoogleFont(
                                   'Poppins',
                                   fontSize: 16 * ffem,
