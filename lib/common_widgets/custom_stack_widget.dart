@@ -1,9 +1,7 @@
-// ignore_for_file: must_be_immutable
-
 import 'package:demo/screens.dart';
 
 class CommonStackWidget extends StatefulWidget {
-  CommonStackWidget({
+  const CommonStackWidget({
     Key? key,
     required this.fem,
     required this.ffem,
@@ -11,7 +9,7 @@ class CommonStackWidget extends StatefulWidget {
     required this.backPath,
     required this.text,
     required this.widget,
-    this.pageController,
+    required this.pageController,
   }) : super(key: key);
 
   final double fem;
@@ -20,7 +18,7 @@ class CommonStackWidget extends StatefulWidget {
   final String backPath;
   final String text;
   final Widget widget;
-  PageController? pageController;
+  final PageController pageController;
 
   @override
   State<CommonStackWidget> createState() => _CommonStackWidgetState();
@@ -191,7 +189,7 @@ class _CommonStackWidgetState extends State<CommonStackWidget> {
                           );
                         } else {
                           setState(() {
-                            widget.pageController!.jumpToPage(index + 1);
+                            widget.pageController.jumpToPage(index + 1);
                             index++;
                           });
                         }
