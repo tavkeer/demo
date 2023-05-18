@@ -28,15 +28,9 @@ class ProfileScreen extends StatelessWidget {
                 child: SizedBox(
                   width: 360 * fem,
                   height: 226 * fem,
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(19 * fem),
-                      topRight: Radius.circular(19 * fem),
-                    ),
-                    child: Image.asset(
-                      "$androidPath/rectangle-35-bok.png",
-                      fit: BoxFit.cover,
-                    ),
+                  child: Image.asset(
+                    "$androidPath/rectangle-35-bok.png",
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),

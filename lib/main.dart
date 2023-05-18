@@ -1,3 +1,5 @@
+import 'package:demo/views/test_result/test_result_screen.dart';
+
 import 'screens.dart';
 
 void main() {
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
-      home: const LandingScreen(),
+      home: const TestResultScreen(),
     );
   }
 }

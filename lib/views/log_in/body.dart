@@ -30,7 +30,6 @@ class Body extends StatelessWidget {
             width: 360 * fem,
             height: 469 * fem,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20 * fem),
               image: DecorationImage(
                 fit: BoxFit.cover,
                 image: AssetImage("$androidPath/rectangle-28-bg.png"),
@@ -40,6 +39,7 @@ class Body extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 5),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   GestureDetector(
                     onTap: () {
@@ -212,28 +212,28 @@ class Body extends StatelessWidget {
                         ),
                       ),
                       LoginPolicyText(fem: fem, ffem: ffem),
-                      Container(
-                        margin: EdgeInsets.fromLTRB(
-                          0,
-                          10 * fem,
-                          0,
-                          0,
+                      InkWell(
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const SlidingPages(),
+                          ),
                         ),
-                        width: 115 * fem,
-                        height: 47 * fem,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10 * fem),
-                          border: Border.all(color: const Color(0xff1f7a8c)),
-                          color: const Color(0xff1f7a8c),
-                        ),
-                        child: Center(
-                          child: InkWell(
-                            onTap: () => Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const SlidingPages(),
-                              ),
-                            ),
+                        child: Container(
+                          margin: EdgeInsets.fromLTRB(
+                            0,
+                            10 * fem,
+                            0,
+                            0,
+                          ),
+                          width: 115 * fem,
+                          height: 47 * fem,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10 * fem),
+                            border: Border.all(color: const Color(0xff1f7a8c)),
+                            color: const Color(0xff1f7a8c),
+                          ),
+                          child: Center(
                             child: Text(
                               'Login',
                               textAlign: TextAlign.center,
