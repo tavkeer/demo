@@ -1,5 +1,3 @@
-import 'package:demo/views/test_result/test_result_screen.dart';
-
 import 'screens.dart';
 
 void main() {

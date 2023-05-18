@@ -27,3 +27,5 @@ export 'package:demo/views/instruction_screen/inst_page.dart';
 export 'package:demo/views/home/home_screen.dart';
 export 'package:demo/views/instruction_screen/components/roundcheckbox.dart';
 export 'package:demo/views/test_result/test_result_screen.dart';
+export 'package:demo/views/financial_goal/financial_goal_screen.dart';
+export 'package:demo/views/set_goals/set_goals_page.dart';
