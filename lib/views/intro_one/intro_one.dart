@@ -5,14 +5,16 @@ class IntroOne extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final PageController pageController = PageController();
     double baseWidth = 360;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.99;
+    final double width = MediaQuery.of(context).size.width;
     return Scaffold(
       body: Container(
         // getstartedpage1v10w2n (1:2)
         padding: EdgeInsets.fromLTRB(0 * fem, 51 * fem, 0 * fem, 0 * fem),
-        width: double.infinity,
+        width: width,
         decoration: BoxDecoration(
           color: const Color(0xffffffff),
           borderRadius: BorderRadius.circular(19 * fem),
@@ -44,6 +46,7 @@ class IntroOne extends StatelessWidget {
                 backPath: "assets/android-design/images/intro_oneback.png",
                 widget: IndexWidgetOne(fem: fem, ffem: ffem),
                 text: "Next",
+                pageController: pageController,
               ),
             ],
           ),
